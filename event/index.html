@@ -1,0 +1,37 @@
+---
+layout: bootstrap
+---
+    <div class="intro-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Event Archive</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="content-section-a">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<p class="lead">Here are all of the events, both past and upcoming, organized by The Collider Project members.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-section-b">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12">
+					<h2>All Events</h2>
+					<ul class="list-unstyled">
+{% for post in site.categories.event %}
+						<li><i class="fa fa-angle-double-right"></i> <a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>

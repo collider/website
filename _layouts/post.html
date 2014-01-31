@@ -1,0 +1,31 @@
+---
+layout: bootstrap
+---
+    <div class="content-section-a">
+
+        <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+        	<h2>{{ page.title }}</h2>
+{{ content }}
+        </div>
+      </div>
+
+{% if page.apply_email%}
+      <div class="row">
+        <div class="col-md-12">
+        	        	<h1>Apply</h1>
+        	<p>Apply to this job via email: {{ page.apply_email }}</p>
+        </div>
+    </div>
+    {% endif %}
+    {% if page.apply_link %}
+      <div class="row">
+        <div class="col-md-12">
+        	<h1>Apply</h1>
+        	<p>Apply to this job: {{ page.apply_link }}</p>
+        </div>
+    </div>
+    {% endif %}
+</div>
+</div>

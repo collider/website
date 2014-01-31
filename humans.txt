@@ -1,0 +1,22 @@
+---
+layout: nil
+---
+/* TEAM */
+	Founder: Dave Caraway
+	Twitter: @fogmine
+
+	Judicator: Nick Gerakines
+	Twitter: @ngerakines
+	From: New Orleans, Louisiana, USA
+
+/* THANKS */
+	Name: Dayton, Ohio
+	Twitter: @cityofdayton
+	From: Dayton, Ohio, USA
+
+	Media Queries by: Marta Armada (@martuishere) and Javier Usobiaga (@htmlboy)
+		
+/* SITE */
+	Last update: {{ site.time | date: "%Y-%m-%d" }}
+	Language: English
+	IDE: Sublime Text
